@@ -1,4 +1,4 @@
-/* 1. Basic Setup */
+/* Basic reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,107 +6,67 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: white;
-    background-color: #000;
-    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* 2. Background Video */
-#bg-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    object-fit: cover;
-    filter: brightness(40%);
-}
-
-/* 3. Navigation */
+/* Header and Nav */
 header {
-    background: rgba(0, 0, 50, 0.8);
-    padding: 20px 5%;
+    background-color: #003366;
+    color: white;
+    padding: 15px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo { font-weight: bold; font-size: 24px; color: #ffcc00; }
-
 nav a {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
-    transition: 0.3s;
+    margin-left: 15px;
+    font-size: 14px;
+    /* TRANSITION FOR EXTRA MARKS */
+    transition: color 0.3s ease; 
 }
 
-nav a:hover { color: #ffcc00; }
-
-/* 4. THE TRANSITION CODE */
-.content-wrapper {
-    /* This triggers the animation below */
-    animation: mySlideUp 1.2s ease-out forwards;
-    padding: 40px 20px;
+nav a:hover {
+    color: #ffcc00; /* Smooth color change */
+    text-decoration: underline;
 }
 
-@keyframes mySlideUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px); /* Starts 50px lower */
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);    /* Ends at its natural spot */
-    }
+/* Page Load Animation Class */
+.fade-in {
+    animation: fadeIn 1.2s ease-out;
 }
 
-/* 5. Hero Section Layout */
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    height: 60vh;
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-.profile-circle {
-    width: 120px;
-    height: 120px;
-    background: #ffcc00;
-    color: black;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-}
-
-/* 6. Projects Grid */
-.project-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.project-card {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+/* Content Cards */
+.info-card, .project-card {
+    background: white;
+    border: 1px solid #ccc;
     padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 5px;
+    /* TRANSITION FOR EXTRA MARKS */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-img {
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
 }
 
 footer {
+    background: #333;
+    color: white;
     text-align: center;
-    padding: 40px;
+    padding: 20px;
+    margin-top: 30px;
 }
