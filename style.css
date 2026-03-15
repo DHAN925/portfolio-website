@@ -1,89 +1,112 @@
-body{
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#f5f5f5;
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Header */
-
-header{
-    background:#0b1d33;
-    color:white;
-    padding:20px;
-    text-align:center;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333;
 }
 
-nav{
-    margin-top:10px;
+/* Header and Nav */
+header {
+    background-color: #003366; /* Deep blue - common student choice */
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav a{
-    color:white;
-    margin:0 15px;
-    text-decoration:none;
-    font-weight:bold;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
 }
 
-nav a:hover{
-    color:orange;
+nav a:hover {
+    text-decoration: underline;
 }
 
-/* Sections */
-
-section{
-    padding:40px;
+/* Hero Section - Simple Split */
+.hero {
+    background-color: white;
+    padding: 50px 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
 }
 
-/* Projects */
-
-#projects{
-    display:flex;
-    flex-direction:column;
+.hero-side h1 {
+    font-size: 40px;
+    color: #003366;
 }
 
-.project{
-    background:white;
-    width:300px;
-    padding:20px;
-    margin:20px 0;
-    border-radius:10px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+.profile-circle {
+    width: 120px;
+    height: 120px;
+    background-color: #ddd;
+    border: 3px solid #003366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.project img{
-    width:100%;
-    border-radius:5px;
+/* Content Sections (For all pages) */
+.sub-page, #projects {
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.info-card, .project-card {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+/* Simple Project Grid */
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    width: 300px;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #eee;
+}
+
+/* Skills/Badges */
+.badge {
+    display: inline-block;
+    background: #e7e7e7;
+    padding: 5px 10px;
+    margin: 5px;
+    border: 1px solid #bbb;
+    font-size: 13px;
 }
 
 /* Footer */
-
-footer{
-    background:#0b1d33;
-    color:white;
-    text-align:center;
-    padding:15px;
-    margin-top:40px;
-}
-
-/* Responsive Design */
-
-@media (max-width:768px){
-
-    nav a{
-        display:block;
-        margin:10px 0;
-    }
-
-    #projects{
-        align-items:center;
-    }
-
-    .project{
-        width:90%;
-    }
-
-    section{
-        padding:20px;
-    }
-
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
 }
