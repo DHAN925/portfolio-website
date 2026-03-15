@@ -6,7 +6,12 @@
     <title>Dhanesh | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="fade-in">
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-stars-in-the-night-sky-995-large.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
     <header>
         <div class="logo">DHANESH</div>
         <nav>
@@ -18,40 +23,43 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-side">
-            <h1>designer</h1>
-            <p>UI Enthusiast</p>
-        </div>
-        <div class="hero-center">
-            <div class="profile-circle">DP</div>
-        </div>
-        <div class="hero-side">
-            <h1>&lt;coder&gt;</h1>
-            <p>CSE Student</p>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2 class="section-title">Latest Work</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <img src="project1.jpg" alt="Banking System" class="project-img">
-                <h3>Banking System</h3>
-                <p>A Java-based transaction manager.</p>
-                <a href="https://github.com" target="_blank" class="btn-link">View Repo</a>
+    <div class="content-wrapper">
+        
+        <section class="hero">
+            <div class="hero-side">
+                <h1>designer</h1>
+                <p>UI Enthusiast</p>
             </div>
-            <div class="project-card">
-                <img src="project2.jpg" alt="Temp Converter" class="project-img">
-                <h3>Temperature Converter</h3>
-                <p>Web tool for unit conversions.</p>
-                <a href="https://github.com" target="_blank" class="btn-link">View Repo</a>
+            <div class="hero-center">
+                <div class="profile-circle">DP</div>
             </div>
-        </div>
-    </section>
+            <div class="hero-side">
+                <h1>&lt;coder&gt;</h1>
+                <p>CSE Student</p>
+            </div>
+        </section>
 
-    <footer>
+        <section id="projects">
+            <h2 class="section-title">Latest Work</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="project1.jpg" alt="Banking System" class="project-img">
+                    <h3>Banking System</h3>
+                    <p>A Java-based transaction manager.</p>
+                    <a href="https://github.com" target="_blank" class="btn-link">View Repo</a>
+                </div>
+                <div class="project-card">
+                    <img src="project2.jpg" alt="Temp Converter" class="project-img">
+                    <h3>Temperature Converter</h3>
+                    <p>Web tool for unit conversions.</p>
+                    <a href="https://github.com" target="_blank" class="btn-link">View Repo</a>
+                </div>
+            </div>
+        </section>
+
+    </div> <footer>
         <p>&copy; 2026 Dhanesh | Amrita Vishwa Vidyapeetham</p>
     </footer>
+
 </body>
 </html>
