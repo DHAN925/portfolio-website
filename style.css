@@ -1,72 +1,149 @@
-/* Basic reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+body{
+    color:white;
 }
 
-/* Header and Nav */
-header {
-    background-color: #003366;
-    color: white;
-    padding: 15px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Background Video */
+#bg-video{
+    position:fixed;
+    right:0;
+    bottom:0;
+    min-width:100%;
+    min-height:100%;
+    z-index:-1;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 15px;
-    font-size: 14px;
-    /* TRANSITION FOR EXTRA MARKS */
-    transition: color 0.3s ease; 
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
 }
 
-nav a:hover {
-    color: #ffcc00; /* Smooth color change */
-    text-decoration: underline;
+.logo{
+    font-size:24px;
+    font-weight:bold;
 }
 
-/* Page Load Animation Class */
-.fade-in {
-    animation: fadeIn 1.2s ease-out;
+/* Navigation */
+nav a{
+    margin-left:20px;
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:0.3s;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+nav a:hover{
+    color:orange;
 }
 
-/* Content Cards */
-.info-card, .project-card {
-    background: white;
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 600px;
-    border-radius: 5px;
-    /* TRANSITION FOR EXTRA MARKS */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Hero Section */
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:100px;
+    gap:60px;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+.hero-side{
+    text-align:center;
 }
 
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
+.hero-side h1{
+    font-size:40px;
+}
+
+.hero-side p{
+    font-size:18px;
+}
+
+/* Profile circle */
+.profile-circle{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    background:white;
+    color:black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    font-size:30px;
+
+    transition:0.4s;
+}
+
+.profile-circle:hover{
+    transform:scale(1.1);
+}
+
+/* Projects Section */
+
+#projects{
+    margin-top:120px;
+    text-align:center;
+}
+
+.section-title{
+    font-size:32px;
+    margin-bottom:40px;
+}
+
+.project-grid{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+.project-card{
+    background:rgba(0,0,0,0.6);
+    padding:20px;
+    border-radius:10px;
+    width:250px;
+
+    transition:0.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-img{
+    width:100%;
+    border-radius:6px;
+}
+
+/* Button link */
+
+.btn-link{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 16px;
+    background:orange;
+    color:black;
+    text-decoration:none;
+    border-radius:4px;
+
+    transition:0.3s;
+}
+
+.btn-link:hover{
+    background:white;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    margin-top:80px;
+    padding:20px;
 }
