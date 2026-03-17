@@ -34,20 +34,24 @@ nav {
     animation: navSlide 1s ease-out forwards;
 }
 
+
+
 nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    gap: 35px;
+    /* Increase the gap so links aren't squished */
+    gap: 50px; 
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    /* Tip 2: Scalable font size for nav */
-    font-size: 1.1rem; 
+    /* Increase from 16px to 1.3rem (approx 21px) */
+    font-size: 1.3rem !important; 
     transition: color 0.3s ease;
+    padding: 10px 5px;
 }
 
 nav ul li a:hover {
@@ -175,17 +179,18 @@ strong, .highlight {
     transform: scale(1.05);
 }
 
-/* FOOTER */
 footer {
     background-color: #111;
     color: #bbb;
     text-align: center;
-    padding: 20px;
+    padding: 25px; /* More padding makes it feel "solid" */
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
-    font-size: 1rem;
+    /* Increase from 14px to 1.1rem (approx 18px) */
+    font-size: 1.1rem !important; 
+    z-index: 1000;
 }
 
 /* ANIMATIONS */
