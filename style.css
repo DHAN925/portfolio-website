@@ -8,10 +8,7 @@
 color: #003366;
     color: white;
     padding: 15px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 nav a {
     color: white;
