@@ -64,38 +64,41 @@ nav ul li a:hover {
 
 /* MAIN CONTENT BOX */
 .main-content {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 60px 40px; /* Increased top/bottom padding */
-    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.75); /* Darker for better contrast */
+    padding: 60px 50px; 
+    border-radius: 20px;
     text-align: center;
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    margin-top: 120px; 
-    width: 90%;
-    max-width: 850px;
+    backdrop-filter: blur(12px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    margin: 120px auto; /* Centers it with space from the nav */
+    width: 85%; /* Uses more of the screen width */
+    max-width: 1000px; /* But doesn't get ridiculously wide on huge monitors */
     animation: fadeIn 1.5s ease-in;
 }
 
 /* Tip 2: Large Heading Scaling */
-.main-content h1 {
-    font-size: 3.5rem; /* Makes the title significantly bigger */
-    margin-bottom: 20px;
-    color: #ffcc00; /* Matching the accent color */
+.main-content h1, 
+.main-content h2 {
+    font-size: 4rem !important; /* Huge visibility */
+    margin-bottom: 25px;
+    color: #ffcc00;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 /* Tip 2: Paragraph Scaling */
 .main-content p {
-    font-size: 1.4rem;
-    max-width: 700px;
-    margin: 0 auto;
+    font-size: 1.6rem !important; /* Large, clear text */
+    line-height: 1.8;
+    color: #f0f0f0;
+    margin-bottom: 20px;
 }
 
 /* Tip 3: Highlight for your name */
-strong {
-    color: #00d4ff; 
-    font-weight: bold;
+strong, .highlight {
+    font-size: 1.1em; /* Makes highlighted words slightly larger than rest of text */
+    color: #00d4ff;
 }
-
 /* SKILLS & CARDS */
 .skills-list {
     display: flex;
@@ -108,10 +111,11 @@ strong {
 .badge {
     background: #003366;
     color: white;
-    padding: 10px 25px;
+    padding: 12px 28px;
     border-radius: 25px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
+    margin: 10px;
     border: 1px solid #ffcc00;
     transition: transform 0.3s ease, background 0.3s ease;
 }
