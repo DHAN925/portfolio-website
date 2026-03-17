@@ -17,45 +17,46 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    padding-bottom: 70px;
-    /* Tip 1: Base font size slightly increased for better readability */
+    /* Added padding top & bottom so content doesn't hide behind fixed nav/footer */
+    padding-top: 100px; 
+    padding-bottom: 100px;
     font-size: 18px; 
 }
 
 /* NAVIGATION */
 nav {
-    background-color: rgba(0, 51, 102, 0.9);
+    /* Using rgba for a glass-like effect that stays visible over stars */
+    background-color: rgba(0, 20, 40, 0.85); 
     width: 100%;
-    padding: 20px 0; /* Slightly more padding */
+    padding: 25px 0; /* Increased vertical padding */
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     animation: navSlide 1s ease-out forwards;
 }
-
-
 
 nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    /* Increase the gap so links aren't squished */
-    gap: 50px; 
+    gap: 60px; /* Wider gap for better visibility */
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    /* Increase from 16px to 1.3rem (approx 21px) */
-    font-size: 1.3rem !important; 
-    transition: color 0.3s ease;
-    padding: 10px 5px;
+    font-size: 1.4rem !important; /* Larger font size */
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+    letter-spacing: 1px;
 }
 
 nav ul li a:hover {
     color: #ffcc00;
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
 }
 
 /* BACKGROUNDS */
@@ -68,41 +69,39 @@ nav ul li a:hover {
 
 /* MAIN CONTENT BOX */
 .main-content {
-    background: rgba(0, 0, 0, 0.75); /* Darker for better contrast */
+    background: rgba(0, 0, 0, 0.75); 
     padding: 60px 50px; 
     border-radius: 20px;
     text-align: center;
     backdrop-filter: blur(12px);
     border: 2px solid rgba(255, 255, 255, 0.1);
-    margin: 120px auto; /* Centers it with space from the nav */
-    width: 85%; /* Uses more of the screen width */
-    max-width: 1000px; /* But doesn't get ridiculously wide on huge monitors */
+    margin: 40px auto; 
+    width: 85%; 
+    max-width: 1000px; 
     animation: fadeIn 1.5s ease-in;
 }
 
-/* Tip 2: Large Heading Scaling */
 .main-content h1, 
 .main-content h2 {
-    font-size: 4rem !important; /* Huge visibility */
+    font-size: 4rem !important; 
     margin-bottom: 25px;
     color: #ffcc00;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-/* Tip 2: Paragraph Scaling */
 .main-content p {
-    font-size: 1.6rem !important; /* Large, clear text */
+    font-size: 1.6rem !important; 
     line-height: 1.8;
     color: #f0f0f0;
     margin-bottom: 20px;
 }
 
-/* Tip 3: Highlight for your name */
 strong, .highlight {
-    font-size: 1.1em; /* Makes highlighted words slightly larger than rest of text */
+    font-size: 1.1em; 
     color: #00d4ff;
 }
+
 /* SKILLS & CARDS */
 .skills-list {
     display: flex;
@@ -179,23 +178,25 @@ strong, .highlight {
     transform: scale(1.05);
 }
 
+/* FOOTER */
 footer {
-    background-color: #111;
-    color: #bbb;
+    background-color: rgba(17, 17, 17, 0.9); /* Slightly transparent black */
+    color: #ffffff; /* Brightened the text color */
     text-align: center;
-    padding: 25px; /* More padding makes it feel "solid" */
+    padding: 30px; /* Increased padding */
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
-    /* Increase from 14px to 1.1rem (approx 18px) */
-    font-size: 1.1rem !important; 
+    font-size: 1.2rem !important; /* Increased font size */
     z-index: 1000;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    letter-spacing: 0.5px;
 }
 
 /* ANIMATIONS */
 @keyframes navSlide {
-    from { transform: translateY(-80px); opacity: 0; }
+    from { transform: translateY(-100px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
 
@@ -203,5 +204,4 @@ footer {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-
 
