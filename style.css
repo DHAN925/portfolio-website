@@ -4,11 +4,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-: #f4f4f4;
-color: #003366;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and Nav */
+header {
+    background-color: #003366;
     color: white;
     padding: 15px 5%;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 nav a {
     color: white;
