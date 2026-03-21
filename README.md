@@ -6,7 +6,7 @@ This is my portfolio website created for the course **23CSE113 User Interface De
 
 ## 🔗 Project Links
 
-*   **🏠 GitHub Profile Link:** [https://github.com](https://github.com)  
+*   **💻 GitHub Profile Link:** [https://github.com](https://github.com)  
     
 
 *   **🌐 Live Webpage Link:** [https://dhan925.github.io/portfolio-website/](https://dhan925.github.io/portfolio-website/)  
