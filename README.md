@@ -1,27 +1,35 @@
 # Portfolio Website
 
-This is my portfolio website created for the course 23CSE113 User Interface Design.
-## Profile Link
-https://github.com/DHAN925
+This is my portfolio website created for the course **23CSE113 User Interface Design**.
 
-## 🌐 Live Website
-https://dhan925.github.io/portfolio-website/
+---
 
-## Features
-- Navigation menu
-- About Me section
-- Projects section
-- Student Academics page
-- Technical Skills page
-- Personal Interests page
-- Contact section
-- Responsive design
+## 🔗 Project Links
 
-## Technologies Used
-- HTML
-- CSS
+*   **GitHub Profile Link:** [https://github.com](https://github.com)  
+    
 
-## Author
-Dhanesh
-B.Tech CSE
-Amrita Vishwa Vidyapeetham
+*   **🌐 Live Webpage Link:** [https://dhan925.github.io/portfolio-website/](https://dhan925.github.io/portfolio-website/)  
+    
+
+
+
+## ✨ Features
+- **Navigation menu** for easy site browsing
+- **About Me** section with personal background
+- **Projects section** showcasing my work
+- **Student Academics** page for educational details
+- **Technical Skills** page listing my proficiencies
+- **Personal Interests** page for a rounded profile
+- **Contact section** for inquiries
+- **Responsive design** for mobile and desktop views
+
+## 🛠️ Technologies Used
+- **HTML5** for structure
+- **CSS3** for styling and layout
+
+## 👤 Author
+**Dhanesh**  
+B.Tech CSE  
+*Amrita Vishwa Vidyapeetham*
+
