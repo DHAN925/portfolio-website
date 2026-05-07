@@ -1,4 +1,4 @@
-/* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 100px;
-    padding-bottom: 120px; /* Buffer to clear the footer */
+    padding-bottom: 120px; 
 }
 
 /* NAVBAR */
@@ -67,7 +67,7 @@ nav ul li a:hover {
     text-align: center;
     margin: 40px;
     width: 85%;
-    max-width: 1100px; /* Wide and professional */
+    max-width: 1100px; 
 }
 
 .main-content h1 {
@@ -81,16 +81,15 @@ nav ul li a:hover {
 }
 
 .main-content p a {
-    color: #ffcc00; /* This makes the links yellow and readable */
-    text-decoration: underline; 
+    color: #ffcc00; 
     font-weight: bold;
 }
 
 .main-content p a:hover {
-    color: #ffffff; /* Turns white when you point at it */
+    color: #ffffff; 
 }
 
-/* SKILLS (RESTORED TO YOUR ORIGINAL) */
+
 .badge {
     background: #003366;
     padding: 12px 25px;
@@ -98,7 +97,7 @@ nav ul li a:hover {
     border: 1px solid #ffcc00;
 }
 
-/* CARDS - UPDATED FOR 2X2 GRID */
+
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -110,7 +109,6 @@ nav ul li a:hover {
     background: rgba(255,255,255,0.1);
     padding: 25px;
     border-radius: 12px;
-    /* This calculation ensures a 2x2 layout on laptop to keep the height short */
     width: calc(45% - 25px); 
     min-width: 280px; 
 }
@@ -153,7 +151,7 @@ footer {
     }
 }
 
-/* MOBILE */
+
 @media (max-width: 768px) {
 
     nav ul {
@@ -183,5 +181,6 @@ footer {
         width: 100%;
     }
 }
+
 
 
